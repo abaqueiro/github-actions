@@ -20,3 +20,6 @@ jobs:
         run: |
           echo "Listing container processes:"
           docker ps -a
+          echo "Current working directory:"
+          pwd
+          find .
