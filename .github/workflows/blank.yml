@@ -10,7 +10,7 @@ on:
 
 jobs:
   stepA:
-    runs-on: self-hosted
+    runs-on: [self-hosted,Linux,X64]
 
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
