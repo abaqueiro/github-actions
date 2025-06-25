@@ -20,6 +20,14 @@ jobs:
         run: |
           env
 
+      - name: Try something
+        run: |
+          echo "Trying to cat file in $HOME"
+          cat ~/msg.txt
+          echo $?
+          echo "Trying to copy file to current working dir: $(pwd)"
+          cp ~/msg.txt .
+
       - name: List containers
         run: |
           echo "Listing container processes:"
